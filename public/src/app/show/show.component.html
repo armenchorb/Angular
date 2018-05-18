@@ -1,0 +1,15 @@
+<h1>Commerce Manager</h1>
+<div id='showproduct'>
+<h1>Product Details</h1>
+<br>
+Name: {{product.name}}
+<br>
+<br>
+Qty: {{product.quantity}}
+<br>
+<br>
+Price: ${{product.price}}.00
+<br>
+<br>
+<button><a [routerLink]="['/']">Back</a></button><button id='delete'(click)="deleteProduct(product._id)">Delete</button>
+</div>

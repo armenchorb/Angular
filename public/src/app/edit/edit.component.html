@@ -1,0 +1,15 @@
+<h1>Commerce Manager</h1>
+<div id='editproduct'>
+<h1>Update Product</h1>
+<form (submit)="updateProduct()">
+Name: <input type='text' name="product.name" [(ngModel)]="product.name">
+<br>
+<br>
+Qty: <input type='text' name="product.quantity" [(ngModel)]="product.quantity">
+<br>
+<br>
+Price: <input type='text' name="product.price" [(ngModel)]="product.price">
+<br>
+<button><a [routerLink]="['/']">Reset</a></button><button id='update'>Update</button>
+</form>
+</div>
